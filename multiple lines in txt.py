@@ -15,3 +15,5 @@ with open("mylife.txt", "a") as output_lines:
         if more_line == "n":
             break
         # If the user entered an invalid answer, print 'error'
+        elif more_line.lower() != 'y':
+            print("Error: Invalid input. Please enter 'y' or 'n'.")
